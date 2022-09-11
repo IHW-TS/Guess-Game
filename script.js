@@ -14,7 +14,7 @@ function play() {
         guessed_nums.push(user_guess);
         tentative += 1;
 
-        if (tentative > 3) {
+        if (tentative >= 3) {
             m3.textContent = "Vous avez échoué " + tentative + ".";
             document.getElementById("my_btn").disabled = true;
 
